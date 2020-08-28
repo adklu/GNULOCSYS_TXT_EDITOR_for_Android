@@ -1,0 +1,2 @@
+# GNULOCSYS_TXT_EDITOR_for_Android_v53
+GNULOCSYS TXT EDITOR for Android v53
