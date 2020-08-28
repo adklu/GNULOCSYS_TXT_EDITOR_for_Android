@@ -35,6 +35,9 @@ Load Path function
 version for older Android devices like Nexus 7 available
 
 
+
+
+
 GNULOCSYS TXT EDITOR for Android
 
 Copyright (c) 2020 A.D.Klumpp
