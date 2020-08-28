@@ -1,0 +1,116 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gnu.test_gnulocsystxteditor.ScrollingActivity">
+
+
+
+
+
+    <item
+        android:id="@+id/action_read"
+        android:orderInCategory="100"
+        android:title="Read"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Find"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_searchnext"
+        android:orderInCategory="100"
+        android:title="Find next"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_stats"
+        android:orderInCategory="100"
+        android:title="Stats (Find)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="Save"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open"
+        android:orderInCategory="100"
+        android:title="Open"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_drive"
+        android:orderInCategory="100"
+        android:title="Show storage path"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_docu"
+        android:orderInCategory="100"
+        android:title="/Documents"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_load"
+        android:orderInCategory="100"
+        android:title="Load path"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_remember"
+        android:orderInCategory="100"
+        android:title="Save path"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_top"
+        android:orderInCategory="100"
+        android:title="Top"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bottom"
+        android:orderInCategory="100"
+        android:title="Bottom"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_goto"
+        android:orderInCategory="100"
+        android:title="50%"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_plus10"
+        android:orderInCategory="100"
+        android:title="+ 10%"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_minus10"
+        android:orderInCategory="100"
+        android:title="- 10%"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+
+
+
+
+</menu>

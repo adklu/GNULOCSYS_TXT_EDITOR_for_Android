@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3DEDE"
+    android:fadeScrollbars="false"
+
+
+
+    android:fastScrollEnabled="true"
+    android:fastScrollAlwaysVisible="true"
+
+
+    android:inputType="text|textNoSuggestions"
+
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+
+
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarSize="20dp"
+
+
+    android:scrollbarStyle="insideOverlay"
+
+
+    android:scrollbarThumbVertical="@color/silver"
+
+
+
+    android:scrollbars="vertical"
+
+    android:scrollHorizontally="false"
+    android:stackFromBottom="true"
+
+    android:transcriptMode="alwaysScroll"
+
+
+    android:verticalScrollbarPosition="right"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/text_margin"
+        android:editable="true"
+        android:inputType="textMultiLine" />
+
+
+</androidx.core.widget.NestedScrollView>
