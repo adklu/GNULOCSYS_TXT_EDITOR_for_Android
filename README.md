@@ -12,7 +12,7 @@ opens and saves the GNULOCSYS txt format
 
 added support for Android 10 devices
 
-independent from Android file browsers, no file browser needed to open txt files
+independent of Android file browsers, no file browser needed to open txt files
 
 possible to save bookmarked or edited versions of a txt book/manuscript...
 
