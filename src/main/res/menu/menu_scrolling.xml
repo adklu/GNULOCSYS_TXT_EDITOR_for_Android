@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.gnu.test_gnulocsystxteditor.ScrollingActivity">
+    tools:context="com.gnu.gnulocsystxteditor.org.gnu.gnulocsystxteditor.ScrollingActivity">
 
 
 
@@ -40,37 +40,61 @@
     <item
         android:id="@+id/action_save"
         android:orderInCategory="100"
-        android:title="Save"
+        android:title="[input] -> Save file"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_open"
         android:orderInCategory="100"
-        android:title="Open"
+        android:title="[input] -> Open file"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_drive"
         android:orderInCategory="100"
-        android:title="Show storage path"
+        android:title="StorageDirectory() -> [input]"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_docu"
+        android:id="@+id/action_root"
         android:orderInCategory="100"
-        android:title="/Documents"
+        android:title="/ -> [input]"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_load"
+        android:id="@+id/action_storage"
         android:orderInCategory="100"
-        android:title="Load path"
+        android:title="/storage -> [input]"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_listdir"
+        android:orderInCategory="100"
+        android:title="[input] -> List dir"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_tree"
+        android:orderInCategory="100"
+        android:title="[input] -> List tree"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_treetxt"
+        android:orderInCategory="100"
+        android:title="[input] -> List txt files"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_loadbookmarks"
+        android:orderInCategory="100"
+        android:title="Open path bookmarks"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_remember"
         android:orderInCategory="100"
-        android:title="Save path"
+        android:title="Save path bookmark"
         app:showAsAction="never" />
 
     <item
@@ -103,14 +127,17 @@
         android:title="- 10%"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:title="[input] -> Clear"
+        app:showAsAction="never" />
 
-
-
-
-
-
-
-
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
 
 
 </menu>
