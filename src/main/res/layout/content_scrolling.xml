@@ -9,9 +9,8 @@
     android:fadeScrollbars="false"
 
 
-
-    android:fastScrollEnabled="true"
     android:fastScrollAlwaysVisible="true"
+    android:fastScrollEnabled="true"
 
 
     android:inputType="text|textNoSuggestions"
@@ -20,14 +19,13 @@
 
 
     android:scrollbarAlwaysDrawVerticalTrack="false"
-    android:scrollbarSize="20dp"
+    android:scrollbarSize="16dp"
 
 
-    android:scrollbarStyle="insideOverlay"
+    android:scrollbarStyle="outsideOverlay"
 
 
     android:scrollbarThumbVertical="@color/silver"
-
 
 
     android:scrollbars="vertical"
@@ -42,7 +40,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
 
 
-    tools:context=".ScrollingActivity"
+    tools:context="gnu.gnu.gnulocsystxteditor.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
 

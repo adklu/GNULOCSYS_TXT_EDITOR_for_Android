@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.gnu.test_gnulocsystxteditor">
+    package="gnu.gnu.gnulocsystxteditor">
 
 
 
@@ -22,14 +22,14 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name="com.gnu.test_gnulocsystxteditor.ScrollingActivity"
+            android:name=".ScrollingActivity"
             android:exported="false"
             android:process=":ScrollingActivity"
             android:stopWithTask="false"
             tools:ignore="Instantiatable" />
 
         <activity
-            android:name="com.gnu.test_gnulocsystxteditor.ScrollingActivity"
+            android:name=".ScrollingActivity"
             android:label="GNULOCSYS TXT EDITOR"
 
             android:inputType="text|textNoSuggestions"
