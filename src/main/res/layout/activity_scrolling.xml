@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ScrollingActivity">
+    tools:context="gnu.gnu.gnulocsystxteditor.ScrollingActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="102dp"
+        android:layout_height="110dp"
         android:background="#928C8C"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -72,6 +72,6 @@
 
     <include
         layout="@layout/content_scrolling"
-        android:layout_height="606dp" />
+        android:layout_height="612dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
