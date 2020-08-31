@@ -1,40 +1,50 @@
 # GNULOCSYS_TXT_EDITOR_for_Android
 GNULOCSYS TXT EDITOR for Android
 
+Advanced txt editor to read and edit long txt files.
 
-read and edit function to read and edit long txt files
-
-tested for stability on older and newer devices
-
-ad free and minimalistic design made for long term editing/correcting/reading...
-
-opens and saves the GNULOCSYS txt format
-
-added support for Android 10 devices
-
-independent of Android file browsers, no file browser needed to open txt files
-
-possible to save bookmarked or edited versions of a txt book/manuscript...
-
-edit path to save alternative txt versions
-
-exact Find, Find next, Stats (Find) functions
-
-fastscroll to navigate inside of very long texts (on newer devices)
-
-alternative for fastscroll for older devices (Top, Bottom, 50%, +10%/-10% relative to cursor)
-
-shows path to default storage
-
-Save Path function
-
-Load Path function
-
-/Documents/file.txt path example to edit
-
-version for older Android devices like Nexus 7 available
+- tested for stability 
+- ad free and minimalist design made for long term editing/correcting/reading...
+- opens and saves the GNULOCSYS txt format
+- independent of Android file browsers
+- lists all txt files inside of a folder tree, including sub folders (txt file filter)
+- [folder tree] to [txt file] function
+- powerful search function to search inside of txt files or folder trees
+- can access the Linux folder tree (/system/usr...)
+- path display box accepts user input
+- bookmark path function
+- made to navigate inside of very long texts or folder tree structures
+- added support for Android 10 devices
+- version for older Android devices like Nexus 7 available
 
 
+changelog
+    v59
+        - layout change: more space under menu button
+        - scrollbar size changed from 20 to 16dp outside overlay
+        - removed: List txt /Documents (java and layout)
+        - removed List 0 directory
+        - removed example: /Documents/file.txt
+        - full path input
+        - [Input]-> command
+        - set dir -> [Input]
+        - [Input]-> List dir
+        - [Input]-> Clear
+        - List / dir
+        - List /storage dir
+        - About
+     v61
+        - save new line in bookmark file
+        - move all non-toast error messages to toast
+     v63
+        - version number included in 'About'
+        - search .toLowerCase()
+     v65
+        - list all files and folders as tree to search for files..
+     v67
+        - txt file filter
+        - removed: System.out.println
+changelog end
 
 
 
