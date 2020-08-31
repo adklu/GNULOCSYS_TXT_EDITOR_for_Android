@@ -10,7 +10,6 @@ Advanced txt editor to read and edit long txt files.
 - lists all txt files inside of a folder tree, including sub folders (txt file filter)
 - [folder tree] to [txt file] function
 - powerful search function to search inside of txt files or folder trees
-- can access the Linux folder tree (/system/usr...)
 - path display box accepts user input
 - bookmark path function
 - made to navigate inside of very long texts or folder tree structures
