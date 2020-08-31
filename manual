@@ -20,7 +20,7 @@ Example: "StorageDirectory()->[input]" [iii] will display the result for "Storag
 
 (e) [i] provides the input (a) for the "[input]->List tree" command [iii], to display all levels of a directory in [ii], for example all folders and files of "Documents" (e.g. "/storage/emulated/0/Documents"), including the sub-folders and their sub-folders and so on inside of those (file tree). This is useful to search for folders or files with the search function [iii], when the location is not known. Depending on the size of the tree, this can take a long time for several thousands of folders and files. So it is recommended to use for unknown folders first (d).
 
-(f) [i] provides the input (a) for the "[input]->List list txt files" command in [iii], to display all txt file paths of a tree in [ii]. 
+(f) [i] provides the input (a) for the "[input]->List txt files" command in [iii], to display all txt file paths of a tree in [ii]. 
 
 
 
