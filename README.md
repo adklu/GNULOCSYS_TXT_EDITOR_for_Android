@@ -69,4 +69,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 
 
 
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot2.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot21.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot22.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot23.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot24.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot25.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot26.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot27.png)
+![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot28.png)
