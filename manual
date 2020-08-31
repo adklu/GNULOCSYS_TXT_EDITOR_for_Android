@@ -1,0 +1,64 @@
+
+Manual
+
+The 3 components of the user interface are:
+[i] the path [input] field
+[ii] text field
+[iii] menu
+
+The functions of [i] are:
+
+(a) [i] accepts path input from the user via keyboard, copy and paste or via [iii.d].
+
+Example: "StorageDirectory()->[input]" [iii] will display the result for "StorageDirectory()" inside of [i]. Please note that StorageDirectory() is a default storage path of the device, and can be differing form device to device. So "StorageDirectory()->[input]" [iii] will display something like "/storage/emulated/0" in [i], depending on the device. A path to a file would be: "/storage/emulated/0/Documents/example.txt"
+
+(b) [i] provides the input (a) for the "[input]->Open file" command [iii] to open the file in [ii], which path is displayed in [i]. If the path in [i] is not a file, but a folder, an error message will appear. See (d) or (e).
+
+(c) [i] provides the input (a) for the "[input]->Save file" command [iii] to save a file under the path, which is displayed in [i]. The name of the file can be the same name as in (b), or a by the user modified name (e.g. it was "/storage/emulated/0/Documents/example.txt" and the user changed it to: "/storage/emulated/0/Documents/example_mod_1.txt"
+
+(d) [i] provides the input (a) for the "[input]->List dir" command [iii], to display the first level of a directory in [ii], for example all folders and files of "Documents" (e.g. "/storage/emulated/0/Documents"), but not the sub-folders inside of those folders. 
+
+(e) [i] provides the input (a) for the "[input]->List tree" command [iii], to display all levels of a directory in [ii], for example all folders and files of "Documents" (e.g. "/storage/emulated/0/Documents"), including the sub-folders and their sub-folders and so on inside of those (file tree). This is useful to search for folders or files with the search function [iii], when the location is not known. Depending on the size of the tree, this can take a long time for several thousands of folders and files. So it is recommended to use for unknown folders first (d).
+
+(f) [i] provides the input (a) for the "[input]->List list txt files" command in [iii], to display all txt file paths of a tree in [ii]. 
+
+
+
+The functions of [ii] are:
+
+(a) [ii] displays txt files (see [i])
+
+(b) [ii] displays directories or file trees (see [i]), which can be saved as txt (e.g. a snapshot of a file tree for further reference or to print out on paper), or a collection of file paths (see [iii.f])
+
+(c) [ii] displays the edits of the user, which can be saved under the same or a different file name (see [i])
+
+
+
+The functions of [iii] are:
+
+(a) [Read]/[Edit]: to toggle between read and edit mode. Read mode will not trigger the keyboard when tapping into the text [ii], but it is still possible to select and copy text. 
+
+(b) The find functions.
+(b1) [Find] will open a window, where the user can input a term (non case sensitive) to search for inside of [ii]. The cursor will skip to the first occurence relative to where the user tapped inside of the text [ii]. (b1) prepares (b2).
+(b2) [Find next] will search for the next occurrence of (b1) relative to where the user tapped into the text (example if the term occurs 2 times, one time at the top and one time at the bottom of the text and the user tapped on the middle of the text, the cursor will skip to the one on the bottom). Also a number is displayed mentioning which occurrence of the term it is (e.g. 343 [of 657]).
+(b3) [Stats (Find)] will display the number of total matches of (b1), e.g. "657".
+
+(c) [Save] and [open] the file, which path is displayed [i]. See [i.b] and [i.c]
+
+(d) To provide the path for [StorageDirectory()] or [/storage] or [/] in [i]. 
+
+(e1) "[input]->List dir" (see i.d)
+
+(e2) "[input]->List tree" (see i.e)
+
+(e3) "[input]->List txt files" (see i.f)
+
+(f) [Open]/[Save path bookmarks]. Saving adds the path, which is displayed in [i] to a txt file, "open" opens this file. The file can be modified like a regular txt file and the modifications can be saved with (c). The bookmarked paths can be copied into [i] or into the clipboard (and used as a list of paste from the clipboard shortcuts for [i]).
+
+(g) [Top]/[Bottom]/[50%] moves the cursor to the top, bottom or middle of [i], if the cursor is inside of [i].
+
+(h) [+10%]/[-10%] moves the cursor +10% or -10% relative to where the cursor is.
+
+Please note that the fast-scroll bar has also the function to navigate quickly in large texts, but not all devices support the fast-scroll bar.
+
+(j) "[input]->clear" clears [i].
