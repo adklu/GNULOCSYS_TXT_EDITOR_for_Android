@@ -3,7 +3,7 @@ GNULOCSYS TXT EDITOR for Android
 
 Advanced txt editor to read and edit long txt files.
 
-- tested for stability 
+
 - ad free and minimalist design made for long term editing/correcting/reading...
 - [folder tree] to [txt file] function
 - txt file filter
