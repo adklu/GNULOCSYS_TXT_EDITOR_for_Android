@@ -73,6 +73,10 @@ changelog end
 
 
 
+-----------------------------------------------------------------
+
+
+
 GNULOCSYS TXT EDITOR for Android
 
 Copyright (c) 2020 A.D.Klumpp
