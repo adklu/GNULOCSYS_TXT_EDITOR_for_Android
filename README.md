@@ -1,5 +1,5 @@
-# GNULOCSYS_TXT_EDITOR_for_Android_v53
-GNULOCSYS TXT EDITOR for Android v53
+# GNULOCSYS_TXT_EDITOR_for_Android
+GNULOCSYS TXT EDITOR for Android
 
 
 read and edit function to read and edit long txt files
