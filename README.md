@@ -19,31 +19,56 @@ Advanced txt editor to read and edit long txt files.
 
 
 changelog
+
     v59
+    
         - layout change: more space under menu button
+        
         - scrollbar size changed from 20 to 16dp outside overlay
+        
         - removed: List txt /Documents (java and layout)
+        
         - removed List 0 directory
+        
         - removed example: /Documents/file.txt
+        
         - full path input
+        
         - [Input]-> command
+        
         - set dir -> [Input]
+        
         - [Input]-> List dir
+        
         - [Input]-> Clear
+        
         - List / dir
+        
         - List /storage dir
+        
         - About
+        
      v61
+     
         - save new line in bookmark file
+        
         - move all non-toast error messages to toast
+        
      v63
         - version number included in 'About'
+        
         - search .toLowerCase()
+        
      v65
+     
         - list all files and folders as tree to search for files..
+        
      v67
+     
         - txt file filter
+        
         - removed: System.out.println
+        
 changelog end
 
 
