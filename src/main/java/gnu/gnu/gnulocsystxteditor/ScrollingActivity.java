@@ -56,6 +56,9 @@ changelog
      v67
         - txt file filter
         - removed: System.out.println
+     v69
+        - requestPermissions removed for (Build.VERSION.SDK_INT < 23)
+
 changelog end
 */
 
@@ -114,7 +117,7 @@ public class ScrollingActivity extends AppCompatActivity {
         outState.clear();
     }
 
-    String version = "v68";
+    String version = "v69";
 
     String criteria = "ethics";
     String inputpath = "/Documents/file.txt";
@@ -292,10 +295,10 @@ public class ScrollingActivity extends AppCompatActivity {
 
         if (id == R.id.action_open)
         {
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
-
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
            //final File intStore = Environment.getExternalStorageDirectory();
 
@@ -369,8 +372,14 @@ public class ScrollingActivity extends AppCompatActivity {
 
         if (id == R.id.action_drive)
         {
+
+            if (Build.VERSION.SDK_INT >= 23)
+            {
+
             String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
             requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            }
+
             final Context context = this;
             final File intStore = Environment.getExternalStorageDirectory();
 
@@ -395,8 +404,10 @@ public class ScrollingActivity extends AppCompatActivity {
 
         if (id == R.id.action_root)
         {
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
            /* final Context context = this;
             final File intStore = Environment.getExternalStorageDirectory();
 
@@ -421,8 +432,10 @@ public class ScrollingActivity extends AppCompatActivity {
 
         if (id == R.id.action_storage)
         {
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
            /* final Context context = this;
             final File intStore = Environment.getExternalStorageDirectory();
 
@@ -450,9 +463,10 @@ public class ScrollingActivity extends AppCompatActivity {
         if (id == R.id.action_save)
         {
 
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
 
             //final File intStore = Environment.getExternalStorageDirectory();
@@ -513,9 +527,10 @@ public class ScrollingActivity extends AppCompatActivity {
         if (id == R.id.action_remember)
         {
 
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
 
             final File intStore = Environment.getExternalStorageDirectory();
@@ -619,9 +634,10 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions,PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
             EditText tvtt = (EditText)findViewById(R.id.editTextTextMultiLine);
             final File intStore = Environment.getExternalStorageDirectory();
@@ -1196,10 +1212,10 @@ int counterp=0;
 //list only the first level of dir
         if (id == R.id.action_listdir)
         {
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions, PERMISSION_REQUEST_CODE);
-
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
             EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
             view.setShowSoftInputOnFocus(false);
@@ -1271,9 +1287,10 @@ int counterp=0;
 //list all subfolders/files of dir
         if (id == R.id.action_tree)
         {
-
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
 
             EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
@@ -1318,8 +1335,10 @@ int counterp=0;
         if (id == R.id.action_treetxt)
         {
 
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
 
 
 
@@ -1368,8 +1387,26 @@ int counterp=0;
         if (id == R.id.action_about)
         {
 
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-            requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+
+
+            if (Build.VERSION.SDK_INT >= 23)
+            {
+
+
+
+                final Context context = this;
+                Toast.makeText(context, "Build.VERSION.SDK_INT >= 23", Toast.LENGTH_LONG).show();
+
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+
+
+
+
+
+            }
+
+
 
 
 
