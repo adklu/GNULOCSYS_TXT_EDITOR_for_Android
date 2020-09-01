@@ -67,6 +67,10 @@ changelog
         
         - removed: System.out.println
         
+     v69
+     
+         - requestPermissions removed for (Build.VERSION.SDK_INT < 23)
+        
 changelog end
 
 
