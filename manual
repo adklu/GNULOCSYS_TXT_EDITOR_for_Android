@@ -55,7 +55,7 @@ The functions of [iii] are:
 
 (f) [Open]/[Save path bookmarks]. Saving adds the path, which is displayed in [i] to a txt file, "open" opens this file. The file can be modified like a regular txt file and the modifications can be saved with (c). The bookmarked paths can be copied into [i] or into the clipboard (and used as a list of paste from the clipboard shortcuts for [i]).
 
-(g) [Top]/[Bottom]/[50%] moves the cursor to the top, bottom or middle of [i], if the cursor is inside of [i].
+(g) [Top]/[Bottom]/[50%] moves the cursor to the top, bottom or middle of [ii], if the cursor is inside of [ii].
 
 (h) [+10%]/[-10%] moves the cursor +10% or -10% relative to where the cursor is.
 
