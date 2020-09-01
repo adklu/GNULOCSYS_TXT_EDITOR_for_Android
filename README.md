@@ -1,18 +1,15 @@
 # GNULOCSYS_TXT_EDITOR_for_Android
-GNULOCSYS TXT EDITOR for Android
+Advanced txt editor to read and edit long text files.
 
-Advanced txt editor to read and edit long txt files.
-
-
-- ad free and minimalist design made for long term editing/correcting/reading...
+- ad free and minimalist design
 - [folder tree] to [txt file] function
 - txt file filter
-- powerful search function to search inside of large txt files or folder trees
+- search function to search inside of txt files or folder trees
 - path display box accepts user input
 - bookmark path function
-- made to navigate inside of long texts or folder tree structures
+- fast-scroll bar and menu options to navigate inside of long texts or folder tree structures
 - added support for Android 10 devices
-- version for older Android devices like Nexus 7 available
+
 
 Manual:
 https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/manual
