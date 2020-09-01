@@ -39,7 +39,7 @@ The functions of [iii] are:
 (a) [Read]/[Edit]: to toggle between read and edit mode. Read mode will not trigger the keyboard when tapping into the text [ii], but it is still possible to select and copy text. 
 
 (b) The find functions.
-(b1) [Find] will open a window, where the user can input a term (non case sensitive) to search for inside of [ii]. The cursor will skip to the first occurence relative to where the user tapped inside of the text [ii]. (b1) prepares (b2).
+(b1) [Find] will open a window, where the user can input a term (non case sensitive) to search for inside of [ii]. (b1) prepares (b2).
 (b2) [Find next] will search for the next occurrence of (b1) relative to where the user tapped into the text (example if the term occurs 2 times, one time at the top and one time at the bottom of the text and the user tapped on the middle of the text, the cursor will skip to the one on the bottom). Also a number is displayed mentioning which occurrence of the term it is (e.g. 343 [of 657]).
 (b3) [Stats (Find)] will display the number of total matches of (b1), e.g. "657".
 
