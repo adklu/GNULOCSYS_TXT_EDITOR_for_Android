@@ -1,6 +1,8 @@
 
 Manual
 
+Prerequisite: Lock screen rotation (rotation not supported)
+
 The 3 components of the user interface are:
 [i] the path [input] field
 [ii] text field
