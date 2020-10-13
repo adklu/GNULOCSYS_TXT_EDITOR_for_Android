@@ -1,7 +1,7 @@
 
 Manual
 
-Prerequisite: Please turn off the automatic screen rotation (not supported)
+
 
 The 3 components of the user interface are:
 [i] the path [input] field
@@ -57,10 +57,19 @@ The functions of [iii] are:
 
 (f) [Open]/[Save path bookmarks]. Saving adds the path, which is displayed in [i] to a txt file, "open" opens this file. The file can be modified like a regular txt file and the modifications can be saved with (c). The bookmarked paths can be copied into [i] or into the clipboard (and used as a list of paste from the clipboard shortcuts for [i]).
 
+(g-h): Set Cursor position
+
 (g) [Top]/[Bottom]/[50%] moves the cursor to the top, bottom or middle of [ii], if the cursor is inside of [ii].
 
 (h) [+10%]/[-10%] moves the cursor +10% or -10% relative to where the cursor is.
 
 Please note that the fast-scroll bar has also the function to navigate quickly in large texts, but not all devices support the fast-scroll bar.
 
-(j) "[input]->clear" clears [i].
+(j) Font size +/-; ++/--: Changes the global font size of [ii]
+
+(k) "[input]->clear" clears [i].
+
+(l) "[text field] -> Clear" clears [ii], e.g. in order to create a new txt file
+
+Note 1: How to convert formatted text into plain text: a) paste as plain text or b) save as txt and reopen it
+Note 2: Mouse and Keyboard are supported (e.g. ctr+c and ctr+v to copy and paste text, which is e.g. mouse selected)
