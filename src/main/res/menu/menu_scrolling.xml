@@ -100,38 +100,74 @@
     <item
         android:id="@+id/action_top"
         android:orderInCategory="100"
-        android:title="Top"
+        android:title="Cursor: Top"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_bottom"
         android:orderInCategory="100"
-        android:title="Bottom"
+        android:title="Cursor: Bottom"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_goto"
         android:orderInCategory="100"
-        android:title="50%"
+        android:title="Cursor: 50%"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_plus10"
         android:orderInCategory="100"
-        android:title="+ 10%"
+        android:title="Cursor: + 10%"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_minus10"
         android:orderInCategory="100"
-        android:title="- 10%"
+        android:title="Cursor: - 10%"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_fontplus"
+        android:orderInCategory="100"
+        android:title="Font size +"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_fontminus"
+        android:orderInCategory="100"
+        android:title="Font size -"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_fontplusplus"
+        android:orderInCategory="100"
+        android:title="Font size ++"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_fontminusminus"
+        android:orderInCategory="100"
+        android:title="Font size --"
+        app:showAsAction="never" />
+
+
 
     <item
         android:id="@+id/action_clear"
         android:orderInCategory="100"
         android:title="[input] -> Clear"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_new_txt"
+        android:orderInCategory="100"
+        android:title="[text field] -> Clear"
+        app:showAsAction="never" />
+
+
 
     <item
         android:id="@+id/action_about"

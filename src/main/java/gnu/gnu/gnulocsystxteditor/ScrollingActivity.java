@@ -57,7 +57,11 @@ changelog
         - txt file filter
         - removed: System.out.println
      v69
-        - requestPermissions removed for (Build.VERSION.SDK_INT < 23) 
+        - requestPermissions removed for (Build.VERSION.SDK_INT < 23)
+     v70
+        - keep content after screen rotation
+        - clear text field function
+        - optimized for tablets, e.g. change font size, optimize for horizontal view...
 
 changelog end
 */
@@ -67,6 +71,7 @@ package gnu.gnu.gnulocsystxteditor;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Build;
@@ -104,23 +109,46 @@ import java.util.List;
 import java.io.Writer;
 
 
+
+
 public class ScrollingActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_CODE = 000;
 
 
-    //
+
+
+    //keep content when rotating screen
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState)
+    {
+        outState.putInt("mInt", 1);
+
         super.onSaveInstanceState(outState);
-        //to fix crash when minimizing.
-        outState.clear();
+        //will lose content when rotating, but keeps it when minimizing:
+        //outState.clear();
     }
 
-    String version = "v69";
+
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+
+        super.onRestoreInstanceState(savedInstanceState);
+
+        int myInt = savedInstanceState.getInt("mInt");
+    }
+
+
+
+
+
+    String version = "v72";
 
     String criteria = "ethics";
     String inputpath = "/Documents/file.txt";
+    int txtfontsize = 18;
 
 
 
@@ -145,8 +173,14 @@ public class ScrollingActivity extends AppCompatActivity {
         CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
 
+        //
 
-    }
+
+
+
+        }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -156,7 +190,12 @@ public class ScrollingActivity extends AppCompatActivity {
         return true;
     }
 
-    //
+
+
+
+
+
+        //
 
     public void clearinputp()
     {
@@ -309,6 +348,9 @@ public class ScrollingActivity extends AppCompatActivity {
 
                         EditText tv = (EditText)findViewById(R.id.editTextTextMultiLine);
                          //TextView tver = (TextView) findViewById(R.id.editTextTextMultiLine);
+
+
+
                         
             final EditText edit =  (EditText) findViewById(R.id.pathtext);
            String Docupath = edit.getText().toString();
@@ -369,6 +411,21 @@ public class ScrollingActivity extends AppCompatActivity {
             EditText editText = (EditText) findViewById(R.id.pathtext);
             editText.setText("");
         }
+
+
+        if (id == R.id.action_new_txt)
+        {
+
+
+            EditText editout = (EditText) findViewById(R.id.editTextTextMultiLine);
+            editout.setText("");
+
+        }
+
+
+
+
+
 
         if (id == R.id.action_drive)
         {
@@ -951,6 +1008,73 @@ int counterp=0;
 
 
         }
+
+        //
+
+        if (id == R.id.action_fontplus)
+        {
+
+            EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+            txtfontsize= txtfontsize + 1;
+
+
+            view.setTextSize(txtfontsize);
+
+
+
+
+        }
+
+        if (id == R.id.action_fontplusplus)
+        {
+
+            EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+            txtfontsize= txtfontsize + 4;
+
+
+            view.setTextSize(txtfontsize);
+
+
+
+
+        }
+
+
+        if (id == R.id.action_fontminus)
+        {
+
+            EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+
+            if(txtfontsize>1) {
+                txtfontsize = txtfontsize - 1;
+
+
+                view.setTextSize(txtfontsize);
+            }
+
+
+
+        }
+
+        if (id == R.id.action_fontminusminus)
+        {
+
+            EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+
+            if(txtfontsize>5) {
+                txtfontsize = txtfontsize - 4;
+
+
+                view.setTextSize(txtfontsize);
+            }
+
+
+
+        }
+
+
+
+
 /*
 
         if (id == R.id.action_listdocu)
