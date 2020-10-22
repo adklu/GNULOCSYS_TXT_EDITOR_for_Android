@@ -1,0 +1,8 @@
+
+build.gradle
+settings.gradle
+gradle.properties
+
+app/build.gradle
+app/build/...
+app/src/...
