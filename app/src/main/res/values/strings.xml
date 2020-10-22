@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">scrolltest</string>
+    <string name="startup_text">
+        "Heading\n\n"
+
+        "line 1"
+        "line 2"
+        "line 3\n"
+
+        "line 4\n\n"
+
+        
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
