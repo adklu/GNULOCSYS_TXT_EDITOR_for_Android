@@ -125,8 +125,10 @@ public class ScrollingActivity extends AppCompatActivity {
         outState.putInt("mInt", 1);
 
         super.onSaveInstanceState(outState);
+
         //will lose content when rotating, but keeps it when minimizing:
-        //outState.clear();
+        //v73
+       outState.clear();
     }
 
 
@@ -144,7 +146,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
-    String version = "v72";
+    String version = "v73";
 
     String criteria = "ethics";
     String inputpath = "/Documents/file.txt";
