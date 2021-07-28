@@ -40,7 +40,7 @@ Privacy Policy
 
 GNULOCSYS_TXT_EDITOR_for_Android can open, edit and save txt files, display folder trees as text, search in txt files and folder trees and save paths of txt files in txt files. 
 There is no other (e.g. online) functionality implemented in GNULOCSYS_TXT_EDITOR_for_Android than the functionality mentioned in the manual.
-GNULOCSYS_TXT_EDITOR_for_Android is not collecting, sending or processing user data to the developer.
+GNULOCSYS_TXT_EDITOR_for_Android is not collecting nor processing other user data nor sending user data to the developer.
 
 
 
