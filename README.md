@@ -39,7 +39,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 Privacy Policy
 
 GNULOCSYS_TXT_EDITOR_for_Android can open, edit and save off-line txt files and display off-line folder trees as text. 
-There is no online functionality implemented in GNULOCSYS_TXT_EDITOR_for_Android. 
+There is no other online functionality implemented in GNULOCSYS_TXT_EDITOR_for_Android. 
 GNULOCSYS_TXT_EDITOR_for_Android is not collecting, sending or processing other user data.
 
 
