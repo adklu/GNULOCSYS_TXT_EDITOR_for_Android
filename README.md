@@ -38,7 +38,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 
 Privacy Policy
 
-GNULOCSYS_TXT_EDITOR_for_Android can open, edit and save off-line txt files, display off-line folder trees as text, search in txt files and folder trees and save paths of txt files in bookmark files. 
+GNULOCSYS_TXT_EDITOR_for_Android can open, edit and save off-line txt files, display off-line folder trees as text, search in txt files and folder trees and save paths of txt files in txt files. 
 There is no other online functionality implemented in GNULOCSYS_TXT_EDITOR_for_Android. 
 GNULOCSYS_TXT_EDITOR_for_Android is not collecting, sending or processing other user data.
 
