@@ -5,8 +5,11 @@
 
 
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
 
     <application
         android:requestLegacyExternalStorage="true"
@@ -31,7 +34,7 @@
         <activity
             android:name=".ScrollingActivity"
             android:label="GNULOCSYS TXT EDITOR"
-
+            android:exported="true"
             android:inputType="text|textNoSuggestions"
 
             android:theme="@style/AppTheme.NoActionBar">
