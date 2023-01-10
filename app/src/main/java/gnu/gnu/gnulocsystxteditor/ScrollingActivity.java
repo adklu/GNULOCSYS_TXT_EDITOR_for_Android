@@ -19,7 +19,6 @@
 
 
 
-
 /*
 to do
 -
@@ -147,7 +146,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
-    String version = "v73";
+    String version = "v74 -- SdkVersion 33";
 
     String criteria = "ethics";
     String inputpath = "/Documents/file.txt";
