@@ -12,7 +12,7 @@ Advanced txt editor to read and edit long text files.
 
 
 Manual:
-https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/manual
+https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/manual
 
 
 -----------------------------------------------------------------------------------------------
