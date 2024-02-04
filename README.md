@@ -8,7 +8,7 @@ Advanced txt editor to read and edit long text files.
 - path display box accepts user input
 - bookmark path function
 - fast-scroll bar and menu options to navigate inside of long texts or folder tree structures
-- added support for Android 10 devices
+
 
 
 Manual:
@@ -21,7 +21,7 @@ https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/manual
 
 GNULOCSYS TXT EDITOR for Android
 
-Copyright (c) 2020 A.D.Klumpp
+Copyright (c) 2020-2024 A.D.Klumpp
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
