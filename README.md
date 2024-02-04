@@ -44,10 +44,10 @@ GNULOCSYS_TXT_EDITOR_for_Android is not collecting nor processing other user dat
 
 
 
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot21.png)
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot22.png)
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot23.png)
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot24.png)
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot25.png)
-![alt text](https://github.com/AndreasDanielKlumpp/GNULOCSYS_TXT_EDITOR_for_Android_v53/blob/master/GUI_screenshot26.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot21.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot22.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot23.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot24.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot25.png)
+![alt text](https://github.com/adklu/GNULOCSYS_TXT_EDITOR_for_Android/blob/master/GUI_screenshot26.png)
 
