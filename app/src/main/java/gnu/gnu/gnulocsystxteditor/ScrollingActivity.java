@@ -71,9 +71,13 @@ package gnu.gnu.gnulocsystxteditor;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -83,9 +87,11 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuCompat;
 
 import android.os.Environment;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
@@ -99,6 +105,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -114,8 +121,7 @@ import java.io.Writer;
 public class ScrollingActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_CODE = 000;
-
-
+    private static final int PICKFILE_RESULT_CODE = 8778;
 
 
     //keep content when rotating screen
@@ -146,7 +152,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
-    String version = "v74 -- SdkVersion 33";
+    String version = "v75 -- SdkVersion 34/Android 14 (240614)";
 
     String criteria = "ethics";
     String inputpath = "/Documents/file.txt";
@@ -189,13 +195,68 @@ public class ScrollingActivity extends AppCompatActivity {
     {
 
         getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+        //ak240611
+        MenuCompat.setGroupDividerEnabled(menu, true);
         return true;
     }
 
+//file browser
+
+    /*
+     <item
+            android:id="@+id/action_filebrowser"
+            android:orderInCategory="100"
+            android:title="File explorer -> [input]"
+            app:showAsAction="never" />
+
+     */
+/*
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        try {
+            super.onActivityResult(requestCode, resultCode, data);
+
+            if (requestCode == PICKFILE_RESULT_CODE  && resultCode  == RESULT_OK)
+            {
+
+
+                Uri uri = data.getData();
+
+
+                String FilePath = data.getData().getPath();
+                String FileName = data.getData().getLastPathSegment();
+                int lastPos = FilePath.length() - FileName.length();
+                String Folder = FilePath.substring(0, lastPos);
+
+
+                File auxFile = new File(uri.getPath());
+
+                InputStream inputStream = getContentResolver().openInputStream(uri);
 
 
 
 
+                //String text2 = uri.toString();
+                String text2 = inputStream.toString();
+
+                Log.d("text22222222", FilePath);
+                Log.d("text23222222", FileName);
+                Log.d("text24222222", Folder);
+
+
+
+
+            }
+        } catch (Exception ex)
+        {
+            Log.d("error", "ex");
+        }
+
+    }
+
+
+*/
 
         //
 
@@ -1334,6 +1395,92 @@ int counterp=0;
 
         }
 */
+
+
+
+        //action_filebrowser (ak240611)
+/*
+        if (id == R.id.action_filebrowser)
+        {
+
+            if (Build.VERSION.SDK_INT >= 23) {
+                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+                requestPermissions(permissions, PERMISSION_REQUEST_CODE);
+            }
+
+            //-----------
+
+
+
+
+
+
+
+
+
+            Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
+            chooseFile.addCategory(Intent.CATEGORY_OPENABLE);
+
+            chooseFile.setType("*/
+        /*");
+            //chooseFile = Intent.createChooser(chooseFile, "Choose a file");
+            //startActivityForResult(chooseFile, PICKFILE_RESULT_CODE);
+
+
+            try
+            {
+                startActivityForResult(chooseFile, PICKFILE_RESULT_CODE);
+
+                EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+                //Uri DataUri = data.getData();
+
+                String text2 = chooseFile.toString();
+
+                Intent intent2 = getIntent();
+
+
+
+
+
+
+
+                view.setShowSoftInputOnFocus(false);
+
+                String text = intent2.toString();
+
+                String textmerge = text2 + "-----------" + text;
+
+
+                view.setText(textmerge);
+
+
+            }
+            catch (ActivityNotFoundException e)
+            {
+
+
+                EditText view = (EditText)findViewById(R.id.editTextTextMultiLine);
+                view.setShowSoftInputOnFocus(false);
+
+
+
+                String text = "File explorer error" ;
+
+
+
+                view.setText(text);
+            }
+
+            }
+
+*/
+
+
+
+
+
+
+
 
 //list only the first level of dir
         if (id == R.id.action_listdir)
